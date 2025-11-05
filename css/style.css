@@ -1,0 +1,310 @@
+/* ---------------------------
+   Global Styles
+---------------------------- */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F3EAE4;
+  color: #1E3E59;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  word-spacing: 0.1em;
+  letter-spacing: 0.02em;
+}
+
+/* Text Elements */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1E3E59;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  text-indent: 1em;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* pseudo-element for rubric */
+p::first-letter {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #F27979;
+}
+
+/* ---------------------------
+   Links & States
+---------------------------- */
+a, a:visited {
+  color: #419CA6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F27979;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #CDC9E1;
+}
+
+/* ---------------------------
+   Header & Navigation
+---------------------------- */
+header {
+  background-color: #C2D7F2;
+  padding: 1em 0;
+  text-align: center;
+  position: static;
+}
+
+header figure {
+  position: relative;
+}
+
+header figure img {
+  width: 6rem;
+}
+
+header figcaption {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: -1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #C2D7F2;
+  padding: 0.3em 0.6em;
+  border-radius: 0.3em;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #1E3E59;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 0.3em 0.5em;
+  border: 0.15em solid transparent;
+  border-radius: 0.3em;
+}
+
+nav ul li a:hover {
+  border-color: #419CA6;
+  color: #F27979;
+}
+
+/* pseudo-class selected link (visited) */
+nav ul li a:visited {
+  color: #419CA6;
+}
+
+/* ---------------------------
+   Main Content
+---------------------------- */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #FFFFFF;
+  border: 0.2em solid #CDC9E1;
+}
+
+/* Hero Image */
+main figure img {
+  width: 100%;
+  border: 0.3em solid #C2D7F2;
+}
+
+/* Figure & Captions */
+figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5em;
+  color: #1E3E59;
+}
+
+/* Float Example – Explore Articles */
+section article {
+  width: 45%;
+  float: left;
+  margin: 1.5em 2%;
+}
+
+section article figure img {
+  width: 100%;
+  height: auto;
+  border: 0.15em solid #CDC9E1;
+  border-radius: 0.3em;
+}
+
+/* clear floats */
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Button Style */
+main a[title="Contact Us"] {
+  display: inline-block;
+  background-color: #F27979;
+  color: #FFFFFF;
+  padding: 0.8em 1.6em;
+  border-radius: 0.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+main a[title="Contact Us"]:hover {
+  background-color: #419CA6;
+}
+
+/* Example of 'a > span' child selector for emphasis */
+a > span {
+  font-weight: bold;
+  color: #F27979;
+}
+
+/* ---------------------------
+   Footer
+---------------------------- */
+footer {
+  background-color: #1E3E59;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+/* ---------------------------
+   Aside (Cookies Message)
+---------------------------- */
+aside[role="dialog"] {
+  background-color: #419CA6;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0.8em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+aside[role="dialog"] a {
+  color: #F3EAE4;
+  text-decoration: underline;
+}
+
+/* ---------------------------
+   Contact Form
+---------------------------- */
+form {
+  background-color: #C2D7F2;
+  padding: 2em;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+fieldset {
+  border: 0.15em solid #419CA6;
+  border-radius: 0.4em;
+}
+
+legend {
+  background-color: #419CA6;
+  color: #FFFFFF;
+  padding: 0.3em 0.6em;
+  border-radius: 0.3em;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 0.1em solid #419CA6;
+  border-radius: 0.3em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background-color: #F27979;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8em 1.6em;
+  border-radius: 0.3em;
+  margin-top: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #419CA6;
+}
+
+/* ---------------------------
+   Table Styling
+---------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+}
+
+table, th, td {
+  border: 0.1em solid #CDC9E1;
+}
+
+th, td {
+  padding: 0.8em;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFF;
+}
