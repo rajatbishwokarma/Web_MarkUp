@@ -508,11 +508,29 @@
 }
 
 @media (min-width: 1025px) {
+	/* Hide mobile menu elements on desktop */
+	.menu-toggle {
+		display: none !important;
+	}
+	header > nav {
+		display: block !important;
+		position: static;
+		background: transparent;
+		padding: 0;
+		box-shadow: none;
+	}
+	header > nav ul {
+		flex-direction: row;
+		padding: 0;
+	}
+
+	/* Hero text positioning */
 	.hero .hero-text { 
 		left: 4.5rem; 
 		top: 4.5rem; 
 	}
 	
+	/* Cards grid layout */
 	.cards {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -524,12 +542,30 @@
 		box-shadow: 0 14px 40px rgba(0,0,0,0.06);
 	}
 	
+	/* CTA section layout */
 	.contact-cta {
 		align-items: stretch;
 	}
 	.contact-cta aside {
 		flex: 0 0 42%;
 	}
+
+	/* Image scaling */
+	.hero img {
+		height: 500px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.cards figure img {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.contact-cta img {
+		height: 100%;
+		object-fit: cover;
+	}
+}
 }
 
 /* Cookie notice */
