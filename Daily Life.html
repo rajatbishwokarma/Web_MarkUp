@@ -2,48 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mygrato - Daily Life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Discover daily life in Haarlem: shopping, transport, and essential living tips.">
   <meta name="keywords" content="Haarlem, daily life, transport, shopping, Netherlands">
   <meta name="author" content="Your Name">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Daily Life — Mygrato</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
   <header>
+    <a href="index.html" class="logo"><img src="img/Logo.png" alt="Mygrato logo" title="Mygrato logo"></a>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="daily-life.html">Daily Life</a></li>
-        <li><a href="settling-in.html">Settling In</a></li>
-        <li><a href="explore-haarlem.html">Explore Haarlem</a></li>
-        <li><a href="quick-tips.html">Quick Tips & Tools</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Daily Life.html" class="active">Daily Life</a></li>
+        <li><a href="Settling In.html">Settling In</a></li>
+        <li><a href="Explore Haarlem.html">Explore Haarlem</a></li>
+        <li><a href="Quick Tips & Tools.html">Quick Tips & Tools</a></li>
+        <li><a class="cta" href="Contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Daily Life in Haarlem</h1>
-    <article>
-      <p>Get familiar with the rhythm of life in Haarlem. Here you’ll find information about public transport, grocery stores, and daily necessities.</p>
-    </article>
-
-    <section>
-      <h2>Public Transport</h2>
-      <p>Haarlem is well connected with buses, trains, and bikes. Get an OV-chipkaart to travel conveniently around the city and beyond.</p>
+    <section class="page-head">
+      <h1>DAILY LIFE</h1>
+      <p>This page helps you with everything you need for day-to-day living in Haarlem; from where to shop to how to get around the city easily.</p>
     </section>
 
-    <section>
-      <h2>Shops &amp; Markets</h2>
-      <p>Find supermarkets like Albert Heijn, Jumbo, and Lidl across the city. Don’t miss the Saturday market at Grote Markt for fresh produce.</p>
+    <section class="shopping">
+      <h2>Shopping in Haarlem</h2>
+      <p>You&rsquo;ll find many supermarkets around Haarlem where you can buy groceries and daily essentials:</p>
+      <ul>
+        <li><strong>Albert Heijn</strong> &ndash; The most common supermarket, with a wide range of food and household products.</li>
+        <li><strong>Lidl or ALDI</strong> &ndash; Great options for affordable groceries and weekly offers.</li>
+        <li><strong>Vomar</strong> &ndash; A local favorite known for fresh produce and good prices.</li>
+        <li><strong>Action</strong> &ndash; Perfect for cheap home supplies, stationery, and small daily items.</li>
+      </ul>
+      <p class="note">Most supermarkets accept debit or credit cards, and some may not take cash. You can find nearby stores by clicking the images below.</p>
+      <section class="brands">
+        <figure><img src="img/Albert_Heijn_Logo.svg.png" alt="Albert Heijn logo" title="Albert Heijn"><figcaption>Albert Heijn</figcaption></figure>
+        <figure><img src="img/Lidl-Logo.svg.png" alt="Lidl logo" title="Lidl"><figcaption>Lidl</figcaption></figure>
+        <figure><img src="img/AldiNord-WorldwideLogo.svg.png" alt="ALDI logo" title="ALDI"><figcaption>ALDI</figcaption></figure>
+        <figure><img src="img/Vomar-logo.jpg" alt="Vomar logo" title="Vomar"><figcaption>Vomar</figcaption></figure>
+        <figure><img src="img/ACTION_Logo.jpg" alt="Action logo" title="Action"><figcaption>Action</figcaption></figure>
+      </section>
+    </section>
+
+    <section class="transport">
+      <figure class="left">
+        <img src="img/Index 3.jpg" alt="Train in Haarlem" title="Public Transport in Haarlem">
+        <figcaption>Public Transport</figcaption>
+      </figure>
+      <article>
+        <h2>Public Transport in Haarlem</h2>
+        <p>If you don&rsquo;t have a bike yet, public transport is very reliable. You&rsquo;ll need an OV-chipkaart, a reusable travel card that you can use for buses, trams, and trains across the Netherlands.</p>
+        <ul>
+          <li>You can buy one at train stations, service desks, or online.</li>
+          <li>You can top up your card balance at yellow machines in stations or certain supermarkets.</li>
+          <li>Always check in and out by tapping your card at the reader.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="bike">
+      <figure>
+        <img src="img/Daily Life_3.jpg" alt="Cyclist in Haarlem" title="Getting around by bike">
+        <figcaption>Getting Around by Bike</figcaption>
+      </figure>
+      <article>
+        <h2>Getting Around by Bike</h2>
+        <p>Biking is the easiest and most popular way to travel in Haarlem. There are separate bike lanes all over the city, so cycling is safe and convenient.</p>
+      </article>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Mygrato — All Rights Reserved</p>
+    <p>&copy; 2025 Mygrato. All Rights Reserved</p>
+    <p><a href="#">Back to Top</a></p>
   </footer>
+
+  <aside class="cookie" role="dialog" aria-label="cookie message">We use cookies to improve your experience. <a href="#">Details</a></aside>
+
 </body>
 </html>

@@ -2,50 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mygrato - Contact</title>
-  <meta name="description" content="Contact Mygrato: send us your questions or feedback about living in Haarlem.">
-  <meta name="keywords" content="Haarlem, contact, email, feedback, Mygrato">
-  <meta name="author" content="Your Name">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="description" content="Contact Mygrato: send your questions or feedback about living in Haarlem.">
+  <meta name="keywords" content="contact, Mygrato, Haarlem, questions, feedback">
+  <meta name="author" content="Rajat Bishwokarma">
+  <title>Contact — Mygrato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
   <header>
+    <a href="index.html" class="logo"><img src="img/Logo.png" alt="Mygrato logo" title="Mygrato logo"></a>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="daily-life.html">Daily Life</a></li>
-        <li><a href="settling-in.html">Settling In</a></li>
-        <li><a href="explore-haarlem.html">Explore Haarlem</a></li>
-        <li><a href="quick-tips.html">Quick Tips & Tools</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Daily Life.html">Daily Life</a></li>
+        <li><a href="Settling In.html">Settling In</a></li>
+        <li><a href="Explore Haarlem.html">Explore Haarlem</a></li>
+        <li><a href="Quick Tips & Tools.html">Quick Tips & Tools</a></li>
+        <li><a class="cta" href="Contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Contact Mygrato</h1>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Get in touch with us</legend>
-        <label for="name">Name:</label>
-        <input id="name" name="name" type="text" required>
+    <section class="page-head">
+      <h1>CONTACT US</h1>
+      <p>Have a question or suggestion? We'd love to hear from you. All fields are required.</p>
+    </section>
 
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="email" required>
+    <section class="contact-form">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Contact form</legend>
+          <label for="fullname">Full Name*</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5"></textarea>
+          <label for="email">Email Address*</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email address" required>
 
-        <input type="submit" value="Send Message">
-      </fieldset>
-    </form>
+          <label for="type">Type of Message*</label>
+          <select id="type" name="type" required>
+            <option value="feedback">Feedback</option>
+            <option value="question">Question</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="subject">Subject*</label>
+          <input id="subject" name="subject" type="text" placeholder="Enter your subject here" required>
+
+          <label for="message">Message*</label>
+          <textarea id="message" name="message" rows="8" placeholder="Write your message here" required></textarea>
+
+          <input class="submit" type="submit" value="SUBMIT">
+        </fieldset>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Mygrato — All Rights Reserved</p>
+    <p>&copy; 2025 Mygrato. All Rights Reserved</p>
   </footer>
+
 </body>
 </html>

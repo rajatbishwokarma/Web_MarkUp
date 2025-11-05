@@ -2,84 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mygrato - Home</title>
-  <meta name="description" content="Mygrato: A friendly guide to living and settling in Haarlem — tips, transport, shops and contact info to make your start easier.">
-  <meta name="keywords" content="Haarlem, moving, Netherlands, guide, living, transport, settling, students">
-  <meta name="author" content="Your Name">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="description" content="Mygrato — a student-friendly guide to Haarlem. Tips on settling in, daily life, transport and local highlights.">
+  <meta name="keywords" content="Haarlem, student, guide, Netherlands, Mygrato">
+  <meta name="author" content="Rajat Bishwokarma">
+  <title>Mygrato — Home</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
   <header>
-    <figure>
-      <img src="img/logo.png" alt="Mygrato logo" title="Mygrato logo">
-      <figcaption>Mygrato</figcaption>
-    </figure>
-    <nav aria-label="Main navigation">
+    <a href="index.html" class="logo" title="Mygrato home">
+      <img src="img/Logo.png" alt="Mygrato logo" title="Mygrato logo">
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
       <ul>
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a href="daily-life.html" title="Daily Life">Daily Life</a></li>
-        <li><a href="settling-in.html" title="Settling In">Settling In</a></li>
-        <li><a href="explore-haarlem.html" title="Explore Haarlem">Explore Haarlem</a></li>
-        <li><a href="quick-tips.html" title="Quick Tips & Tools">Quick Tips &amp; Tools</a></li>
-        <li><a href="contact.html" title="Contact">Contact</a></li>
+        <li><a href="Daily Life.html">Daily Life</a></li>
+        <li><a href="Settling In.html">Settling In</a></li>
+        <li><a href="Explore Haarlem.html">Explore Haarlem</a></li>
+        <li><a href="Quick Tips & Tools.html">Quick Tips & Tools</a></li>
+        <li><a class="cta" href="Contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h1>Welcome to Mygrato</h1>
-      <p>Your guide to getting started with living and settling in Haarlem.</p>
-      <figure>
-        <img src="img/haarlem-hero.jpg" alt="Aerial map of Haarlem" title="Map of Haarlem">
-        <figcaption>Explore Mygrato — Your guide to getting started with living and settling in Haarlem.</figcaption>
-      </figure>
+    <section class="hero" aria-label="Welcome banner">
+      <img src="img/Mygrato Hero.jpg" alt="Map model of Haarlem" title="Welcome to Mygrato">
+      <div class="hero-text">
+        <h1>WELCOME TO MYGRATO</h1>
+        <p>Your guide to getting started with living and settling in Haarlem.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Explore Mygrato</h2>
+    <section class="cards" aria-label="Explore Mygrato">
+      <h3 class="explore-title">Explore Mygrato</h3>
+
       <article>
         <figure>
-          <img src="img/daily-life.jpg" alt="Daily Life image" title="Daily Life">
-          <figcaption><strong>Daily Life</strong> — Learn where to shop and how to travel around Haarlem.</figcaption>
+          <img src="img/Daily Life_2.jpg" alt="Daily life" title="Daily Life">
         </figure>
+        <div>
+          <h2><a href="Daily Life.html">Daily Life</a></h2>
+          <p>Learn where to shop
+and how to travel
+around Haarlem</p>
+        </div>
       </article>
+
       <article>
         <figure>
-          <img src="img/settling-in.jpg" alt="Settling In image" title="Settling In">
-          <figcaption><strong>Settling In</strong> — Quick guide for integration in Haarlem.</figcaption>
+          <img src="img/Settling In.jpg" alt="Settling in" title="Settling In">
         </figure>
+        <div>
+          <h2><a href="Settling In.html">Settling In</a></h2>
+          <p>Quick guide for
+integration in Haarlem</p>
+        </div>
       </article>
+
       <article>
         <figure>
-          <img src="img/explore.jpg" alt="Explore Haarlem image" title="Explore Haarlem">
-          <figcaption><strong>Explore Haarlem</strong> — Discover the best places to see.</figcaption>
+          <img src="img/Explore Mygrato.jpg" alt="Explore Haarlem" title="Explore Haarlem">
         </figure>
+        <div>
+          <h2><a href="Explore Haarlem.html">Explore Haarlem</a></h2>
+          <p>Discover the best
+places to see</p>
+        </div>
       </article>
+
       <article>
         <figure>
-          <img src="img/quick-tips.jpg" alt="Quick Tips & Tools image" title="Quick Tips & Tools">
-          <figcaption><strong>Quick Tips &amp; Tools</strong> — Find useful links, simple tips, and emergency contacts.</figcaption>
+          <img src="img/Quick Tips & Tricks.jpg" alt="Quick tips" title="Quick Tips & Tools">
         </figure>
+        <div>
+          <h2><a href="Quick Tips & Tools.html">Quick Tips & Tools</a></h2>
+          <p>Find useful links,
+simple tips, and
+emergency contacts</p>
+        </div>
       </article>
     </section>
 
-    <section>
-      <h2>Have a question or suggestion?</h2>
-      <p>You can reach out through our contact form for any feedback or requests. We’re here to make your start in Haarlem smoother and more welcoming.</p>
-      <p><a href="contact.html" title="Contact Us">Contact Us</a></p>
+    <section class="contact-cta">
+      <article>
+        <h2>Have a question or
+suggestion?</h2>
+        <p>You can reach out through our contact form for
+any feedback or requests. We’re here to make
+your start in Haarlem smoother and more
+welcoming</p>
+        <p><a class="button" href="Contact.html">Contact Us</a></p>
+      </article>
+      <aside>
+        <figure>
+          <img src="img/Index 3.jpg" alt="Streets of Haarlem" title="Streets of Haarlem">
+        </figure>
+      </aside>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Mygrato — All Rights Reserved</p>
+    <p>&copy; 2025 Mygrato. All Rights Reserved</p>
+    <p><a href="#">Back to Top</a> | <a href="index.html">Back to Home</a></p>
   </footer>
 
-  <aside role="dialog" aria-live="polite">
-    <p>We use cookies to improve your experience. <a href="quick-tips.html" title="Privacy">Privacy Policy</a></p>
-  </aside>
+  <aside class="cookie" role="dialog" aria-label="cookie message">We use cookies to improve your experience. <a href="#">Details</a></aside>
+
+  <script>
+    (function(){
+      var btn = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('header nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        nav.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+    })();
+  </script>
+
 </body>
 </html>
